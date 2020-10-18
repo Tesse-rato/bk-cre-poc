@@ -10,4 +10,4 @@ module.exports = ({
   sections,
   section,
   id: 'scene'
-}).render();
+});

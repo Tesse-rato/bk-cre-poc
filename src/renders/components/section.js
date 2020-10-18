@@ -15,4 +15,4 @@ module.exports = ({
   backgroundColor,
   titleColor,
   id: 'section'
-}).render();
+});

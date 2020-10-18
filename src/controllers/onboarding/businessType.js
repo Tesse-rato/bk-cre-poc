@@ -4,8 +4,8 @@ const DB = require('../../db');
 module.exports = function businessType(headers, body) {
   return new Promise((resolve, reject) => {
     try {
-
-      console.log(headers, DB.get('onboarding'));
+      console.clear();
+      console.log(JSON.stringify(DB.get('onboarding')));
 
       resolve();
     } catch (err) {

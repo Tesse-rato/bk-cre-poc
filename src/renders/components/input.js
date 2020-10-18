@@ -13,4 +13,4 @@ module.exports = ({
   width,
   validate,
   id: 'input'
-}).render()
+});

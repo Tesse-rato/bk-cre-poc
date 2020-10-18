@@ -30,8 +30,8 @@ module.exports = Scene({
       title: '1 - Sócio',
       backgroundColor: 'gray',
       childrens: [
-        [Button({ label: 'Adicionar um novo sócio', onClick: 'url' })],
+        Button({ label: 'Adicionar um novo sócio', onClick: 'url', type: 'newPartner' }),
       ]
     })
   ]
-})
+});

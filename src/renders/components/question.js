@@ -9,4 +9,4 @@ module.exports = ({
   onAccept,
   onCancel,
   id: 'question',
-}).render();
+});

@@ -2,8 +2,10 @@ const PureComponent = require('./pureComponent');
 
 module.exports = ({
   label,
-  onClick
+  onClick,
+  type
 }) => PureComponent({
   label,
-  onClick
-}).render();
+  onClick,
+  type
+});

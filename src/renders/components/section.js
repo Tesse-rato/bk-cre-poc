@@ -6,7 +6,8 @@ module.exports = ({
   title,
   subTitle,
   backgroundColor,
-  titleColor
+  titleColor,
+  type
 }) => PureComponent({
   childrens,
   ableToContinue,
@@ -14,5 +15,6 @@ module.exports = ({
   subTitle,
   backgroundColor,
   titleColor,
+  type,
   id: 'section'
 });

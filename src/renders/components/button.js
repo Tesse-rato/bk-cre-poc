@@ -7,5 +7,6 @@ module.exports = ({
 }) => PureComponent({
   label,
   onClick,
-  type
+  type,
+  id: 'button'
 });

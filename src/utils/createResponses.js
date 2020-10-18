@@ -5,6 +5,11 @@ module.exports = response => ({
     response.write(JSON.stringify(err));
     response.end();
   },
+  404(err) {
+    response.statusCode = 404;
+    response.write(JSON.stringify(err));
+    response.end();
+  },
   400(err) {
     response.statusCode = 400;
     response.write(JSON.stringify(err));

@@ -7,5 +7,6 @@
  */
 
 module.exports = {
-  businessType: require('./businessType'),
+  partner: require('./partner'),
+  addPartner: require('./addPartner'),
 }

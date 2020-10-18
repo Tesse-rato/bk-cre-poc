@@ -1,8 +1,8 @@
+const { onboarding: { partnerFrameAsnwer } } = require('../../routes/urls');
 const {
   Scene,
   Section,
   Question,
-  Input,
   Button
 } = require('../components');
 const {
@@ -18,7 +18,7 @@ module.exports = Scene({
       title: 'Quadros de Sócios',
       subTitle: 'Identifique aqui todos os sócios presentes no contrato social',
       type: 'header',
-      childrens: [Question({ label: 'Você faz parte do quadro societário?', onAccept: 'url', onCancel: 'url' })],
+      childrens: [Question({ label: 'Você faz parte do quadro societário?', onAccept: partnerFrameAsnwer, onCancel: partnerFrameAsnwer, value: false })],
     }),
     AddPartner,
     Section({

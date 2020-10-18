@@ -21,7 +21,8 @@ const Routes = (request, response) => {
           .cb({ ...headers, path: url }, JSON.parse(data)) // Chamando metodo passando (header, data)
           .then(Response[200])
           .catch((err, statusCode) => {
-            Response[statusCode || 500](JSON.stringify(err));
+            console.log(statusCode);
+            Response[statusCode || 400](err);
           });
       }
       catch (err) { Response[500]({ err, message: '::Several internal error::' }); console.error(err) }

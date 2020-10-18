@@ -1,5 +1,5 @@
 
 module.exports = {
   CreateResponses: require('./createResponses'),
-  AddPartner: require('./addPartner'),
+  AddPartner: require('./onboarding/partner/addPartner'),
 }

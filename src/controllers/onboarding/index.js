@@ -9,4 +9,5 @@
 module.exports = {
   partner: require('./partner'),
   addPartner: require('./addPartner'),
+  partnerFrameAsnwer: require('./partnerFrameAsnwer'),
 }

@@ -1,4 +1,4 @@
-const { AddPartner } = require('../renders/section');
+const { AddPartner } = require('../../../renders/section');
 
 module.exports = function (body) {
   const

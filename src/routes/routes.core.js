@@ -1,11 +1,10 @@
-module.exports = new class RoutesCore {
-  constructor() {
-    this.routes = {
-      get: [], post: [], put: [],
-    }
-  }
-
-  get(path, cb) { this.routes.get.push({ path, cb }) }
-  post(path, cb) { this.routes.post.push({ path, cb }) }
-  put(path, cb) { this.routes.put.push({ path, cb }) }
+module.exports = {
+  GET: new Array(),
+  POST: new Array(),
+  PUT: new Array(),
+  DELETE: new Array(),
+  get(path, cb) { this.GET.push({ path, cb }) },
+  post(path, cb) { this.POST.push({ path, cb }) },
+  put(path, cb) { this.PUT.push({ path, cb }) },
+  delete(path, cb) { this.DELETE.push({ path, cb }) }
 }

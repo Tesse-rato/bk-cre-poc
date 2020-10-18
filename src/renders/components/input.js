@@ -6,11 +6,13 @@ module.exports = ({
   type,
   width,
   validate,
+  isValid
 }) => PureComponent({
   placeholder,
   value,
   type,
   width,
   validate,
+  isValid,
   id: 'input'
 });

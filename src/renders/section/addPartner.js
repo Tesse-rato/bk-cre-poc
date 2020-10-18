@@ -1,5 +1,7 @@
-const Input = require("../components/input");
-const Section = require("../components/section");
+const {
+  Input,
+  Section
+} = require("../components");
 
 module.exports = title => Section({
   ableToContinue: false,
@@ -7,7 +9,13 @@ module.exports = title => Section({
   backgroundColor: 'gray',
   type: 'partner',
   childrens: [
-    [Input({ placeholder: 'CPF', validate: true, type: 'cpf' }), Input({ placeholder: 'Nome Completo', validate: true, type: 'text' })],
-    [Input({ placeholder: 'Telefone Celular', validate: true, type: 'cel' }), Input({ placeholder: 'E-mail', validate: true, type: 'e-mail' }), Input({ placeholder: 'Porcentual Desconto', validate: true, type: 'percent' })]
+    [
+      Input({ isValid: true, validate: true, type: 'cpf', placeholder: 'CPF', }),
+      Input({ isValid: true, validate: true, type: 'text', placeholder: 'Nome Completo', })
+    ],
+    [
+      Input({ isValid: true, validate: true, type: 'cel', placeholder: 'Telefone Celular', }),
+      Input({ isValid: true, validate: true, type: 'e-mail', placeholder: 'E-mail', }),
+      Input({ isValid: true, validate: true, type: 'percent', placeholder: 'Porcentual Desconto', })]
   ]
 })

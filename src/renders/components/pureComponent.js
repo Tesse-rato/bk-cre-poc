@@ -19,6 +19,7 @@ const DEFAULT_VALUE = {
   width: undefined,
   validate: undefined,
   id: undefined,
+  isValid: undefined,
 }
 
 module.exports = function PureComponent(arg = DEFAULT_VALUE) {

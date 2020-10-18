@@ -14,7 +14,7 @@ module.exports = Scene({
   section: 0,
   sections: [
     Section({
-      ableToContinue: false,
+      ableToContinue: true,
       title: 'Quadros de Sócios',
       subTitle: 'Identifique aqui todos os sócios presentes no contrato social',
       type: 'header',
@@ -25,7 +25,7 @@ module.exports = Scene({
       ableToContinue: false,
       type: 'footer',
       childrens: [
-        Button({ label: 'Adicionar um novo sócio', onClick: 'url', type: 'newPartner' }),
+        Button({ label: 'Adicionar um novo sócio', onClick: '/onboarding/partner', type: 'newPartner' }),
       ]
     })
   ]

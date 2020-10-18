@@ -6,9 +6,6 @@ module.exports = function partner(headers, body) {
   return new Promise((resolve, reject) => {
     try {
       console.clear();
-      console.log(JSON.stringify(DB.get('onboarding')));
-
-      console.log(PartnersScene);
 
       resolve(PartnersScene);
 

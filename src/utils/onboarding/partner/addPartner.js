@@ -1,4 +1,4 @@
-const { AddPartner } = require('../../../renders/section');
+const { AddPartnerSection } = require('../../../renders/section');
 
 module.exports = function (body) {
   const
@@ -11,7 +11,7 @@ module.exports = function (body) {
     sections: [
       ...header,
       ...partner,
-      AddPartner,
+      AddPartnerSection(`${partner.length + 1} - Sócio`),
       ...footer
     ]
   }

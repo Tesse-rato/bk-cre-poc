@@ -8,6 +8,8 @@ module.exports = function partner(headers, body) {
       console.clear();
       console.log(JSON.stringify(DB.get('onboarding')));
 
+      console.log(PartnersScene);
+
       resolve(PartnersScene);
 
     } catch (err) {

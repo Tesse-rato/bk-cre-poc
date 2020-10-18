@@ -4,7 +4,7 @@ const Methods = { GET, PUT, POST, DELETE };
 const DataBase = require('../db');
 
 const Routes = (request, response) => {
-  let data = new String();
+  let data = '';
   const
     { method, headers, url } = request,
     Response = CreateResponses(response),
@@ -17,11 +17,11 @@ const Routes = (request, response) => {
     .on('end', () => {
       try {
         if (!route) return Response[404]({ method, url, message: 'Not found' });
+        data = JSON.parse(data.toString() || '{}');
         route
-          .cb({ ...headers, path: url }, JSON.parse(data)) // Chamando metodo passando (header, data)
+          .cb({ ...headers, path: url }, data) // Chamando metodo passando (header, data)
           .then(Response[200])
           .catch((err, statusCode) => {
-            console.log(statusCode);
             Response[statusCode || 400](err);
           });
       }

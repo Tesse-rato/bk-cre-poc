@@ -1,3 +1,3 @@
 module.exports = {
-  AddPartner: require('./addPartner'),
+  AddPartnerSection: require('./addPartner'),
 }

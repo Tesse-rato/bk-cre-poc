@@ -1,9 +1,9 @@
 const Input = require("../components/input");
 const Section = require("../components/section");
 
-module.exports = Section({
+module.exports = title => Section({
   ableToContinue: false,
-  title: '1 - Sócio',
+  title: title || ' - Sócio',
   backgroundColor: 'gray',
   type: 'partner',
   childrens: [

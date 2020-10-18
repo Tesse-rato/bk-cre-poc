@@ -6,8 +6,8 @@ const {
   Button
 } = require('../components');
 const {
-  AddPartner,
-} = require('../section')
+  AddPartnerSection,
+} = require('../section');
 
 module.exports = Scene({
   ableToContinue: false,
@@ -20,7 +20,7 @@ module.exports = Scene({
       type: 'header',
       childrens: [Question({ label: 'Você faz parte do quadro societário?', onAccept: partnerFrameAsnwer, onCancel: partnerFrameAsnwer, value: false })],
     }),
-    AddPartner,
+    AddPartnerSection('1 - Sócio'),
     Section({
       ableToContinue: false,
       type: 'footer',

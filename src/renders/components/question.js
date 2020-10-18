@@ -1,13 +1,12 @@
-
 const PureComponent = require('./pureComponent');
 
 module.exports = ({
-  ableToContinue,
-  sections,
-  section,
+  label,
+  onAccept,
+  onCancel
 }) => PureComponent({
-  ableToContinue,
-  sections,
-  section,
-  id: 'scene'
+  label,
+  onAccept,
+  onCancel,
+  id: 'question',
 }).render();

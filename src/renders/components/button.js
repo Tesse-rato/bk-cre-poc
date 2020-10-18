@@ -1,13 +1,9 @@
-
 const PureComponent = require('./pureComponent');
 
 module.exports = ({
-  ableToContinue,
-  sections,
-  section,
+  label,
+  onClick
 }) => PureComponent({
-  ableToContinue,
-  sections,
-  section,
-  id: 'scene'
+  label,
+  onClick
 }).render();

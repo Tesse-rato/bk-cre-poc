@@ -13,5 +13,6 @@ module.exports = ({
   title,
   subTitle,
   backgroundColor,
-  titleColor
+  titleColor,
+  id: 'section'
 }).render();

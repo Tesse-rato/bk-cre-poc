@@ -1,6 +1,8 @@
 const { CreateResponses } = require('../utils');
 const { GET, POST, PUT, DELETE } = require('../routes');
 const Methods = { GET, PUT, POST, DELETE };
+const DataBase = require('../db');
+const { PartnersScene } = require('../renders')
 
 const Routes = (request, response) => {
   let data = new String();
@@ -27,3 +29,14 @@ const Routes = (request, response) => {
 };
 
 module.exports = Routes;
+
+
+
+DataBase.set('onboarding', [
+  {
+    scene: 0,
+    scenes: [
+      PartnersScene
+    ]
+  }
+])
